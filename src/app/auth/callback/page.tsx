@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation"
 import { checkAuthStatus } from "./actions";
 import { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const {user} = useKindeBrowserClient();
   const {data} = useQuery({
@@ -37,4 +37,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

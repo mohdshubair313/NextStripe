@@ -26,7 +26,7 @@ export const Hero = () => {
 					</a> */}
 
 					<p className='text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 text-balance'>
-						Stripe subscriptions are intimidating, but they don&apos;t have to be. Let&apos;s prove it.
+						Stripe subscriptions are intimidating, but they dont have to be. Lets prove it.
 					</p>
 
 					<div className='space-y-4 md:space-y-0 md:space-x-4'>
