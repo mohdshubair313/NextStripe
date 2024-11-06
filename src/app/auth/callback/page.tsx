@@ -17,13 +17,13 @@ const Page = () => {
 
   useEffect(() => {
     const stripepaymentLink = localStorage.getItem("stripePaymentLink");
-    if(data?.success && stripepaymentLink && user?.email) {
-      localStorage.removeItem("stripePaymentLink")
-      router.push(stripepaymentLink + `?prefilled_email=${user.email}`)
-    } else if(data?.success === false) {
-      router.push('/')
+    if (data?.success && stripepaymentLink && user?.email) {
+      localStorage.removeItem("stripePaymentLink");
+      router.push(stripepaymentLink + `?prefilled_email=${user.email}`);
+    } else if (data?.success === false) {
+      router.push('/');
     }
-  },[router,user,data])
+  }, [router, user, data]);
 
   if(data?.success) router.push("/");
   return (
